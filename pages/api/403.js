@@ -1,3 +1,3 @@
 export default function handler(req, res) {
-  res.status(403).send();
+  res.status(403).send("Forbidden");
 }
