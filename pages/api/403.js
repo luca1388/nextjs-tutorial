@@ -2,7 +2,8 @@ import Cors from 'cors';
 
 const cors = Cors({
   credentials: true,
-  methods: ['GET', 'HEAD', 'OPTIONS', 'POST']
+  methods: ['GET', 'HEAD', 'OPTIONS', 'POST'],
+  origin: ["https://latest.fnbltest.com", "https://atlas-team.fnbltest.com"]
 });
 
 const middleware = (req, res, fn) => {
